@@ -1,0 +1,55 @@
+# Hosted Ubuntu 1604 Image (Ubuntu 16.04.6 LTS)
+The following software is installed on machines in the Hosted Ubuntu 1604 (dev) pool
+***
+- Basic CLI:
+  - curl
+  - dnsutils
+  - file
+  - ftp
+  - iproute2
+  - iputils-ping
+  - jq
+  - libcurl3
+  - libicu55
+  - libunwind8
+  - locales
+  - netcat
+  - openssh-client
+  - rsync
+  - shellcheck
+  - sudo
+  - telnet
+  - time
+  - unzip
+  - wget
+  - zip
+  - tzdata
+- 7-Zip 9.20
+- AzCopy (azcopy 7.3.0-netcore)
+- Azure CLI (azure-cli                         2.0.71)
+- Azure CLI (azure-devops                      0.12.0)
+- build-essential
+- Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190309042730.123 (branches/release_60))
+- CMake (cmake version 3.12.4)
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.4.4)
+- GNU C++ 7.4.0
+- Git (2.23.0)
+- Git Large File Storage (LFS) (2.8.0)
+- Go 1.9 (go version go1.9.7 linux/amd64)
+- Go 1.10 (go version go1.10.8 linux/amd64)
+- Go 1.11 (go version go1.11.12 linux/amd64)
+- Go 1.12 (go version go1.12.7 linux/amd64)
+- HHVM (HipHop VM 4.19.0 (rel))
+- Node.js (v10.16.3)
+- Bower (1.8.8)
+- Grunt (grunt-cli v1.2.0)
+- Gulp (CLI version: 2.2.0
+Local version: Unknown)
+- n (6.0.1)
+- Parcel (1.12.3)
+- TypeScript (Version 3.5.3)
+- Webpack (4.39.2)
+- Webpack CLI (3.3.7)
+- Yarn (1.17.3)
+- Powershell (PowerShell 6.2.2)
+- Vcpkg 2019.08.16-unknownhash
