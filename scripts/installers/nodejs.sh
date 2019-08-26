@@ -24,9 +24,12 @@ apt-get update
 # Install yarn
 apt-get install -y --no-install-recommends yarn
 
+# Install pnpm
+npm install -g pnpm
+
 # Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
-for cmd in node bower grunt gulp webpack parcel yarn; do
+for cmd in node bower grunt gulp webpack parcel yarn pnpm; do
     if ! command -v $cmd; then
         echo "$cmd was not installed"
         exit 1
@@ -36,6 +39,9 @@ done
 # Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
 DocumentInstalledItem "Node.js ($(node --version))"
+DocumentInstalledItem "NPM ($(npm --version))"
+DocumentInstalledItem "PNPM ($(pnpm --version))"
+DocumentInstalledItem "Yarn ($(yarn --version))"
 DocumentInstalledItem "Bower ($(bower --version))"
 DocumentInstalledItem "Grunt ($(grunt --version))"
 DocumentInstalledItem "Gulp ($(gulp --version))"
@@ -44,4 +50,3 @@ DocumentInstalledItem "Parcel ($(parcel --version))"
 DocumentInstalledItem "TypeScript ($(tsc --version))"
 DocumentInstalledItem "Webpack ($(webpack --version))"
 DocumentInstalledItem "Webpack CLI ($(webpack-cli --version))"
-DocumentInstalledItem "Yarn ($(yarn --version))"
