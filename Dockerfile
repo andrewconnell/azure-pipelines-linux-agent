@@ -60,7 +60,7 @@ RUN ./scripts/base/repos.sh \
   && ./scripts/installers/build-essential.sh \
   && ./scripts/installers/clang.sh \
   && ./scripts/installers/cmake.sh \
-  && ./scripts/installers/1604/dotnetcore-sdk.sh \
+  # && ./scripts/installers/1604/dotnetcore-sdk.sh \
   && ./scripts/installers/erlang.sh \
   && ./scripts/installers/gcc.sh \
   && ./scripts/installers/git.sh \
