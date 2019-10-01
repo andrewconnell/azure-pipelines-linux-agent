@@ -18,14 +18,21 @@ The Azure Pipelines agent must be started with account connection information, p
 | AZP_POOL       | **optional** Azure Pipelines agent pool name. If not specified, `Default` is used.                  | *My Custom Agent Pool*          |
 | AZP_WORK       | **optional** Work directory. If not specified, `_work` is used.                                     | *_work*                         |
 
-Example:
+Examples:
 
 ```sh
+# run detached mode creating an agent named "mydockeragent"
 docker run \
+  -d
   -e AZP_URL=https://dev.azure.com/contoso \
   -e AZP_TOKEN=m23qugcXXXXXXXXXXXXXXXmvurfvra \
   -e AZP_AGENT_NAME=mydockeragent \
-  azure-pipelines-linux-agent:latest
+  andrewconnell/azure-pipelines-linux-agent:latest
+# run in detached mode, using the container hostid as the agent name
+docker run \
+  -e AZP_URL=https://dev.azure.com/contoso \
+  -e AZP_TOKEN=m23qugcXXXXXXXXXXXXXXXmvurfvra \
+  andrewconnell/azure-pipelines-linux-agent:latest
 ```
 
 Once the agent is running, it will appear in the list of agents in the specified DevOps pipeline agent pool.
